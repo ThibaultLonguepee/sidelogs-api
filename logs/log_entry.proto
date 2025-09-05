@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option go_package = "github.com/ThibaultLonguepee/sidelogs-proto/logs";
+
+message LogEntry {
+    int32 id = 1;
+    string title = 2;
+    string message = 3;
+}
