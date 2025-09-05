@@ -1,0 +1,3 @@
+[submodule "sidelogs-proto"]
+	path = sidelogs-proto
+	url = git@github.com:ThibaultLonguepee/sidelogs-proto.git
