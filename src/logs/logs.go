@@ -18,6 +18,8 @@ func CreateLogsServer() *LogsServer {
 }
 
 func (srv *LogsServer) WriteLog(ctx context.Context, log *sidelogspb.Log) (*sidelogspb.Empty, error) {
-	fmt.Println("A log was written!")
+	fmt.Println("====\tNew log entry\t====")
+	fmt.Println("Title: ", log.Title)
+	fmt.Println("Message: ", log.Message)
 	return &sidelogspb.Empty{}, nil
 }
